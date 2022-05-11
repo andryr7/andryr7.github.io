@@ -1,0 +1,168 @@
+/* backgrounds by SVGBackgrounds.com */
+
+/* Couleurs */
+:root {
+--coul1:#23222E;
+/* bleu nuit */
+--coul2:#6E2E2D;
+/* rouge foncé */
+--coul3:#C85A3B;
+/* orange fonce */
+--coul4:#DC8C52;
+/* orange clair */
+--coul5:#EAE8DD
+/* creme */
+}
+
+@media only screen and (max-width: 750px) {
+#carte {
+  margin-top: 200px;
+}
+#barrenav {
+  display: none;
+}
+
+}
+
+body {
+  margin: 0;
+font-family: system-ui;
+background-color: var(--coul5);
+}
+
+a{
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+#barrenav {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--coul1);
+  background-color: var(--coul3)
+}
+
+#barrenav  ul {
+  display: flex;
+  padding: 0: ;
+  margin: 0;
+  justify-content: center;
+}
+
+#barrenav ul li {
+  list-style-type: none;
+}
+
+#barrenav a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+#barrenav a:visited {
+  color: var(--coul1);
+}
+
+#barrenav a:hover {
+  color: var(--coul5);
+}
+
+#deco {
+  background-color: #23222E;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='620' height='620' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23C85A3B' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23C85A3B'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+  height: 45em;
+}
+
+#carte {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  background-color: var(--coul3);
+  transform: translateY(-75%);
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: 1.5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+#carte h1 {
+  font-size: 2.5em;
+}
+
+#carte h2 {
+  font-size: 1em;
+}
+
+#cadretexte {
+  text-align: center;
+  margin-top: -50px;
+}
+
+#presentation {
+  background-color: var(--coul5);
+  margin-top: -500px;
+}
+
+#competences {
+  background-color: var(--coul4);
+}
+
+#experience {
+  background-color: var(--coul5);
+}
+
+#formation {
+  background-color: var(--coul1);
+  color: var(--coul4);
+}
+
+#interets {
+  background-color: var(--coul3);
+}
+
+.partie {
+  display: flex;
+  flex-flow: column wrap;
+  padding-top: 7em;
+  padding-bottom: 7em;
+  align-items: center;
+  font-size: 1.5em
+}
+
+.contenupartie {
+  width: 100% ;
+  max-width: 1330px ;
+  text-align: center;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-contenu {
+  display: none;
+  position: relative;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 10px 16px;
+}
+
+/* changer "none" en "block" pour afficher le contenu */
+
+.dropdown:hover .dropdown-contenu {
+  display: none;
+}
